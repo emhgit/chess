@@ -8,7 +8,6 @@ import pieces.Piece.Color;
 public class BoardManager{
     private Piece[][] board;
     private ArrayList<Piece> pieces;
-    private Game game;
     private Piece checkingPiece;
     private Piece castlingPiece;
 
@@ -19,7 +18,6 @@ public class BoardManager{
 
     public BoardManager(Game game, Piece[][] board){
             this.board = board;
-            this.game = game;
 
             whiteKingPosition = "e1"; //remove king posiiton logic in piece class & handle it in game class
             blackKingPosition = "e8";
